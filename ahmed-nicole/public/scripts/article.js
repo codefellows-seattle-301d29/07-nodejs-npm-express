@@ -51,6 +51,6 @@ Article.prototype.insertRecord = function(callback) {
 
       // COMMENT: What is the purpose of this line? Is the callback invoked when this method is called? Why or why not?
       // PUT YOUR RESPONSE HERE
-      if (callback) callback();
+      if (callback) console.log(callback());
     })
 };
