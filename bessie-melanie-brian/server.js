@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.static('./public'));
 
 app.get('/new', (req, res) => {
-  res.sendFile('new.html', {'root':'./public/'});
+  res.sendFile('/public/new.html', {'root':'./public/'});
 });
 // Why do we have to specify the root if it's already taken care of on line 11?
 
