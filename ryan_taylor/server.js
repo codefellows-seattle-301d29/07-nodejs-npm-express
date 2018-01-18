@@ -11,7 +11,11 @@ app.use(express.static('./public'));
 //Our files are now in a public directory because they are the files that are going to be utilized by the client. 
 
 app.get('/new', (req, res) => {
+
+
+
   res.sendFile('new.html', {root: './public'});
+
   console.log('testing this function');
 });
 
