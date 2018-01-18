@@ -11,8 +11,15 @@ app.use(express.static('./public'));
 
 app.listen(PORT, () => console.log('listening on PORT:', PORT));
 
+app.get('/new', (req, res) => {
+  res.sendfile('public/new.html');
+});
 
-app.post('/articles', bodyParser, function(request, response) {
+app.get('*', (req, res) => {
+  res.send('Quoth the server: 404');
+});
+
+app.post('/articles', bodyParser, (request, response) => {
   // REVIEW: This route will receive a new article from the form page, new.html, and log that form data to the console. We will wire this up soon to actually write a record to our persistence layer!
   console.log(request.body);
   response.send('Record posted to server!!');
