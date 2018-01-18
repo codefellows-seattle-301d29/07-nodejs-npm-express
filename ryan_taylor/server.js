@@ -20,7 +20,7 @@ app.use(express.static('./public'));
 
 app.get('/new', (req, res) => {
   res.sendFile('new.html', {'root': './public'});
-  console.log('testing this function')
+  console.log('testing this function');
 });
 
 app.use((req, res) => {
