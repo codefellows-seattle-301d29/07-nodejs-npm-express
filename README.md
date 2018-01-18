@@ -1,57 +1,3 @@
-![CF](https://camo.githubusercontent.com/70edab54bba80edb7493cad3135e9606781cbb6b/687474703a2f2f692e696d6775722e636f6d2f377635415363382e706e67) Lab 07: NodeJS & NPM
-===
-
-## Code Wars Challenge
-
-Complete [today's Kata](https://www.codewars.com/kata/disemvowel-trolls) and follow the submission instructions from Lab 01.
-
-## Lab 07 Submission Instructions
-Follow the submission instructions from Lab 01.
-
-## Resources  
-[Node JS Docs](https://nodejs.org/en/)
-
-[NPM JS Docs](https://docs.npmjs.com/)
-
-[Express JS Docs](http://expressjs.com/en/4x/api.html)
-
-## Configuration
-_Your repository must include:_
-
-```
-07-nodejs-npm-express
-├── .eslintrc.json
-├── .gitignore
-├── LICENSE
-├── README.md
-├── node_modules
-├── package-lock.json
-├── package.json
-├── public
-│   ├── data
-│   │   └── hackerIpsum.json
-│   ├── index.html
-│   ├── new.html
-│   ├── scripts
-│   │   ├── article.js
-│   │   └── articleView.js
-│   ├── styles
-│   │   ├── base.css
-│   │   ├── fonts
-│   │   │   ├── icomoon.eot
-│   │   │   ├── icomoon.svg
-│   │   │   ├── icomoon.ttf
-│   │   │   └── icomoon.woff
-│   │   ├── icons.css
-│   │   ├── layout.css
-│   │   └── modules.css
-│   └── vendor
-│       └── styles
-│           ├── default.css
-│           ├── normalize.css
-│           └── railscasts.css
-└── server.js
-```
 
 ## User Stories and Feature Tasks
 
@@ -76,19 +22,18 @@ _Your repository must include:_
 - Create a ***404*** route to handle any requests other than index.html or new.html, and deliver a 404 status and a message to those invalid requests.
 
 ## Documentation
-_Your README.md must include:_
 
 ```md
-# Project Name
+# NODEJS-NPM-EXPRESS
 
-**Author**: Your Name Goes Here
+**Author**: Jay Adams
 **Version**: 1.0.0 (increment the patch/fix version number up if you make more commits past your first submission)
 
 ## Overview
-<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for a Code Fellows 301 class. (i.e. What's your problem domain?) -->
+<!-- This is a blog app that is hosted on a local server that utilizes reqs and resps. -->
 
 ## Getting Started
-<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
+<!-- watch the video form yeserdays lecture.? -->
 
 ## Architecture
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
@@ -96,9 +41,9 @@ _Your README.md must include:_
 ## Change Log
 <!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an examples:
 
-01-01-2001 4:59pm - Application now has a fully-functional express server, with GET and POST routes for the book resource.
+01-18-2018 10:59pm - Application now has a fully-functional express server, with GET and POST routes for the book resource.
 
 ## Credits and Collaborations
-<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
+<!-- Gene Pieterson was a collaborator. -->
 -->
 ```
