@@ -15,12 +15,16 @@ app.use(express.static('./public'));
 
 
 
-app.post('/articles', bodyParser, function(request, response) {
+app.post('/articles', bodyParser, (req, res) => {
   // REVIEW: This route will receive a new article from the form page, new.html, and log that form data to the console. We will wire this up soon to actually write a record to our persistence layer!
-  console.log(request.body);
-  response.send('Record posted to server!!');
+  console.log(req.body);
+  res.send('Record posted to server!!');
 })
 
 app.listen(PORT, () =>{
     console.log("listening on:", PORT)
 })
+
+app.use( (req, res) => {
+  res.status(404).send('Invalid URL');
+});
