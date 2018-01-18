@@ -50,7 +50,7 @@ Article.prototype.insertRecord = function(callback) {
       console.log(data);
 
       // COMMENT: What is the purpose of this line? Is the callback invoked when this method is called? Why or why not?
-      // PUT YOUR RESPONSE HERE
+      // The callback is used to continue the execution of the code asynchronously. It is not invoked when the method is called, it's invoked when it recieves a call from the server.
       if (callback) callback();
     })
 };
