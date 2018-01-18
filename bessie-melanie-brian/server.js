@@ -19,7 +19,7 @@ app.get('/new', (req, res) => {
   res.sendFile('new.html', {'root':'./public/'});
 });
 
-app.get('/*', (req, res) => {
+app.get('*', (req, res) => {
   res.status(404).sendFile('404doggo.jpg', {'root':'./public/'});
 });
 
