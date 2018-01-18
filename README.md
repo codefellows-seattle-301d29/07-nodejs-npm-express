@@ -75,30 +75,25 @@ _Your repository must include:_
 
 - Create a ***404*** route to handle any requests other than index.html or new.html, and deliver a 404 status and a message to those invalid requests.
 
-## Documentation
-_Your README.md must include:_
+# 07-nodejs-npm-express
 
-```md
-# Project Name
-
-**Author**: Your Name Goes Here
-**Version**: 1.0.0 (increment the patch/fix version number up if you make more commits past your first submission)
+**Author**: Bessie Arino, Melanie Cohen and Brian Bixby
+**Version**: 1.0.0
 
 ## Overview
-<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for a Code Fellows 301 class. (i.e. What's your problem domain?) -->
+We created a server that now renders our home and new pages and 404 page errors.
 
 ## Getting Started
-<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
+First a user needs to have Node installed on their computer and do a npm init and create a gitignore and then download npm packages for express and body-parser. Next the user would need to create a server that can send a response. From here we added middleware that allows static files to be rendered from our public folder. Lastly, we established our routs to our home, new and 404 pages and within these routes we had to specify the root for each.
 
 ## Architecture
-<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+We utilized Node and NPM Express, body-parser, github, Javascript, HTML and CSS
 
 ## Change Log
-<!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an examples:
-
-01-01-2001 4:59pm - Application now has a fully-functional express server, with GET and POST routes for the book resource.
+01-18-2001 9:00am - initial commit
+01-18-2001 10:00am - correct file structure per reqs
+01-18-2001 10:15am - instantiated route to render page by identifying rot
+01-18-2001 10:30 - render 404 dog image on url page not found
 
 ## Credits and Collaborations
-<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
--->
-```
+Codefellows https://github.com/codefellows-seattle-301d29 
