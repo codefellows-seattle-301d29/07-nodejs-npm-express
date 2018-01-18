@@ -13,11 +13,12 @@ app.use(express.static('./public'));
 app.get('/new', (req, res) => {
   res.sendFile('new.html', {'root':'./public/'});
 });
+// Why do we have to specify the root if it's already taken care of on line 11?
 
-app.post('/articles', bodyParser, function(request, response) {
+app.post('/articles', bodyParser, function(req, res) {
   // REVIEW: This route will receive a new article from the form page, new.html, and log that form data to the console. We will wire this up soon to actually write a record to our persistence layer!
-  console.log(request.body);
-  response.send('Record posted to server!!');
+  console.log(req.body);
+  res.send('Record posted to server!!');
 })
 
 app.listen(PORT, () => {
