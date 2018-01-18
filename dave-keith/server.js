@@ -4,6 +4,13 @@
 
 const bodyParser = require('body-parser').urlencoded({extended: true});
 const PORT = process.env.PORT || 3000;
+const express = require('express');
+const app = express();
+
+app.use(express.static('./public'));
+
+app.listen(PORT, () => console.log('listening on PORT:', PORT));
+
 
 app.post('/articles', bodyParser, function(request, response) {
   // REVIEW: This route will receive a new article from the form page, new.html, and log that form data to the console. We will wire this up soon to actually write a record to our persistence layer!
