@@ -10,9 +10,9 @@ const PORT = process.env.PORT || 3000;
 // Our client facing files are now in public so we can tell express to serve those static files in that directory.
 app.use(express.static('./public'));
 
-app.get('/new', (req,res) => {
-  res.sendFile('./public/new.html');
-})
+app.get('/new', (req, res) => {
+  res.sendFile('new.html', {'root':'./public/'});
+});
 
 app.post('/articles', bodyParser, function(request, response) {
   // REVIEW: This route will receive a new article from the form page, new.html, and log that form data to the console. We will wire this up soon to actually write a record to our persistence layer!
