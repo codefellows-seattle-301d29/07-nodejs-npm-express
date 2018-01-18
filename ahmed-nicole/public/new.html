@@ -91,5 +91,14 @@
     <script>
       articleView.initNewArticlePage();
     </script>
+    <script>
+      $.ajax({
+        url: 'api/codefellows/',
+        method: 'GET',
+        success: function (data, message) {
+          console.log('response from API', data);
+        }
+      })
+    </script>
   </body>
 </html>
