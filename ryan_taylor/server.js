@@ -15,3 +15,14 @@ app.post('/articles', bodyParser, function(request, response) {
 app.listen(PORT, () => {
   console.log('currently listening on port:', PORT);
 });
+
+app.use(express.static('./public'));
+
+app.get('/new', (req, res) => {
+  res.sendFile('new.html', {'root': './public'});
+  console.log('testing this function')
+});
+
+app.use((req, res) => {
+  res.status(404).send('Page not Found!')
+});
