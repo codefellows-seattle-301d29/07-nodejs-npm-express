@@ -49,8 +49,8 @@ Article.prototype.insertRecord = function(callback) {
     .then(data => {
       console.log(data);
 
-      // COMMENT: What is the purpose of this line? Is the callback invoked when this method is called? Why or why not?
-      // PUT YOUR RESPONSE HERE
+      // DONE COMMENT: What is the purpose of this line? Is the callback invoked when this method is called? Why or why not?
+      // Executes a function passed into the insertRecord function to update after the server responds to the post request.  The callback is invoked when a function is passed as the argument. 
       if (callback) callback();
     })
 };
