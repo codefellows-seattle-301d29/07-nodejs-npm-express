@@ -17,3 +17,7 @@ app.post('/articles', bodyParser, function(request, response) {
   console.log(request.body);
   response.send('Record posted to server!!');
 })
+
+app.get ('*', function (req, res) {
+  res.send('404')
+})
