@@ -89,16 +89,17 @@
     <script src="scripts/article.js"></script>
     <script src="scripts/articleView.js"></script>
     <script>
-      articleView.initNewArticlePage();
-    </script>
-    <script>
       $.ajax({
-        url: 'api/codefellows/',
+        url: '/new',
         method: 'GET',
         success: function (data, message) {
           console.log('response from API', data);
         }
-      })
+      });
     </script>
+    <script>
+      articleView.initNewArticlePage();
+    </script>
+      
   </body>
 </html>
