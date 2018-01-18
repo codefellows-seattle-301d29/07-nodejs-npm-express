@@ -12,8 +12,8 @@ const PORT = process.env.PORT || 3000;
 //The root argument for the static method specifies the root directory from which to serve public assets
 app.use(express.static('./public'));
 
-app.get('api/codefellows', (res, req) => {
-  res.send('./public/new.html');
+app.get('/new', (req, res) => {
+  res.sendFile('new.html', {root: './public'});
 });
 
 app.post('/articles', bodyParser, function(request, response) {
