@@ -20,7 +20,7 @@ app.get('/new', (req, res) => {
 });
 
 app.get('/*', (req, res) => {
-  res.status(404).send('you just made a request');
+  res.status(404).sendFile('404doggo.jpg', {'root':'./public/'});
 });
 
 app.post('/articles', bodyParser, (req, res) => {
