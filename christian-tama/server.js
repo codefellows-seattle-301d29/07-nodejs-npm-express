@@ -16,7 +16,7 @@ app.get('/new', (req, res) => {
 });
 
 app.use((req, res) => {
-  res.status(404).send('Sorry, something exploded');
+  res.status(404).send('Sorry, we sent it too far');
 });
 
 app.listen(PORT, () => {
