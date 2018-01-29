@@ -15,7 +15,7 @@ app.get('/new', (req, res) => {
   console.log('testing this function');
 });
 
-app.post('/articles', bodyParser, function(req, res) {
+app.post('/articles', bodyParser, (req, res) => {
   // REVIEW: This route will receive a new article from the form page, new.html, and log that form data to the console. We will wire this up soon to actually write a record to our persistence layer!
   console.log(req.body);
   res.send('Record posted to server!!');
