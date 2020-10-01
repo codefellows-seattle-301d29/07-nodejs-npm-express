@@ -57,7 +57,7 @@ _Your repository must include:_
 
 *As a user, I want to be able to create new articles and allow guests to retrieve those new articles.*
 
-- Initialize the project with `npm init`, which creates `package.json` and `package-lock.json` files. Don't forget to add `node_modules` to your `.gitignore` file!
+- First --> install npm then Initialize the project with `npm init`, which creates `package.json` and `package-lock.json` files. Don't forget to add `node_modules` to your `.gitignore` file!
 -  Use NPM to install ExpressJS and ensure that it's been saved as a dependency in the `package.json` file.
 
 *As a developer, I want to use the ExpressJS framework to set up a server file to handle HTTP requests and deliver responses.*
